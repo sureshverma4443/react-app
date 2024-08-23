@@ -1,5 +1,7 @@
-import{Link} from 'react-router-dom'
-import './sidebar.css'
+
+import './sidebar.css';
+import Linklist from '../../components/common/LinkList/LinkList';
+
 
 let sidebardata = {
     header: "Menu",
@@ -34,13 +36,16 @@ let sidebardata = {
     return (
         <aside id="sidebar">
             <h2>{sidebardata.header}</h2>
-            <div className="btn-container">
+            {/* <div className="btn-container">
                 {sidebardata.contact.map((hd)=>{
                     return(
                         <Link to={hd.key} key={hd.key} className="button" >{hd.label}</Link>
                     )
                 })}
-            </div>
+            </div> */}
+
+
+            <Linklist linkArr={sidebardata.contact} containerclass={"btn-container"}  linkClass="button"/>
 
 
 
