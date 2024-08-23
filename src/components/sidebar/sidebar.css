@@ -1,0 +1,30 @@
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    gap:20px;
+  
+    }
+  
+    .button{
+      padding: 10px;     
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer; 
+      text-decoration: none;
+  
+    }
+    .button button{
+      margin: auto;
+      align-items: center;
+      text-align: center;
+    }
+
+   .button:hover{
+        background-color: #105012;
+      color: white;
+      cursor: pointer; 
+      text-decoration: none;
+    }
